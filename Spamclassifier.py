@@ -24,7 +24,7 @@ for i in range(0, len(messages)):
     corpus.append(review)
     
     
-# Creating the Bag of Words model
+# Creating the Bag of Words model- may be used in smaller data sets
 from sklearn.feature_extraction.text import CountVectorizer
 cv = CountVectorizer(max_features=2500)
 X = cv.fit_transform(corpus).toarray()
